@@ -29,8 +29,8 @@ app.post('/create-checkout-session', async (req, res) => {
         },
       ],
       mode: 'payment',
-      success_url: `https://blog.lipsumhub.com/what-is-dummy-page/`,
-      cancel_url: `https://blog.lipsumhub.com/what-is-dummy-page/`,
+      success_url: `https://classy-brioche-53113d.netlify.app/`,
+      cancel_url: `https://classy-brioche-53113d.netlify.app/`,
     });
 
     res.json({ id: session.id });
