@@ -146,5 +146,6 @@ app.use('*', (req, res) => {
 
 
 app.listen(4242, () => {
-  console.log(`Server is running on http://localhost:${port}`);
+  console.log(`Server is running on http://localhost:4242`);
 });
+
