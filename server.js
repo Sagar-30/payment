@@ -77,8 +77,8 @@ app.post('/create-checkout-session', [
         },
       ],
       mode: 'payment',
-      success_url: `https://classy-brioche-53113d.netlify.app/success?session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: `https://classy-brioche-53113d.netlify.app/cancel`,
+      success_url: `https://classy-brioche-53113d.netlify.app/#/success?session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url: `https://classy-brioche-53113d.netlify.app/#/cancel`,
       metadata: {
         product_id: id.toString(),
         product_name: name
@@ -148,5 +148,6 @@ app.use('*', (req, res) => {
 app.listen(4242, () => {
   console.log(`Server is running on http://localhost:4242`);
 });
+
 
 
